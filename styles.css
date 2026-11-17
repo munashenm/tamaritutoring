@@ -541,14 +541,9 @@ a {
 .site-footer {
   background: var(--green-deep);
   color: var(--cream);
-  padding: 2.25rem 0 2.5rem;
+  padding: 1.35rem 0 1.5rem;
   border-top: 4px solid var(--gold);
-}
-
-.footer-name {
-  font-family: var(--serif);
-  font-size: 1.5rem;
-  line-height: 1.2;
+  font-size: 1rem;
 }
 
 .site-footer a {
@@ -556,8 +551,20 @@ a {
   font-weight: 700;
 }
 
-.site-footer p:last-child {
-  margin-bottom: 0;
+.footer-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem 1.5rem;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.site-footer .footer-credit {
+  margin-left: auto;
 }
 
 main:focus {
