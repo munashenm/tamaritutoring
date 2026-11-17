@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us | Tamari Tutorial Service</title>
+    <meta name="description" content="Contact Tamari Tutorial Service in Chitungwiza. Send a message about Grade 4 to Grade 7 tutorials in Mathematics, English and Combined Science.">
+    <link rel="canonical" href="https://tamaritutoring.com/contact.html">
+    <meta property="og:title" content="Contact Us | Tamari Tutorial Service">
+    <meta property="og:description" content="Contact Tamari Tutorial Service in Chitungwiza about Grade 4 to Grade 7 tutorials.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tamaritutoring.com/contact.html">
+    <meta property="og:locale" content="en_GB">
+    <meta name="theme-color" content="#123a2b">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="index.html">
+          <img src="logo.png" alt="Tamari Tutorial Service" width="1086" height="362">
+        </a>
+        <nav class="site-nav" aria-label="Page">
+          <ul>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#subjects">Subjects</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+            <li><a class="nav-enrol" href="index.html#enrolment">Enrolment</a></li>
+            <li><a class="nav-login" href="https://app.schoolhubsa.co.za/tamaritutoring" target="_blank" rel="noopener noreferrer">Parents Login<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="contact-page" tabindex="-1">
+      <div class="wrap">
+        <p class="kicker">Contact</p>
+        <h1>Contact Us</h1>
+        <p class="contact-lead">Send a message about Grade 4 to Grade 7 tutorials in Mathematics, English and Combined Science. Tamari Tutorial Service will receive it by email.</p>
+
+        <div class="form-success" id="sent-note" hidden>
+          <p>Thank you. Your message has been sent to Tamari Tutorial Service.</p>
+        </div>
+
+        <form class="contact-form" id="contact-form" action="https://formsubmit.co/admin@tamarimachiya.com" method="POST">
+          <input type="hidden" name="_subject" value="Message from the Tamari Tutorial Service website">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://tamaritutoring.com/contact.html?sent=1">
+          <p class="hp" aria-hidden="true">
+            <label>Leave this field empty<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label>
+          </p>
+          <label>
+            Your name
+            <input type="text" name="name" autocomplete="name" required>
+          </label>
+          <label>
+            Email address
+            <input type="email" name="email" autocomplete="email" required>
+          </label>
+          <label>
+            Message
+            <textarea name="message" required></textarea>
+          </label>
+          <button class="button" type="submit">Send message</button>
+          <p class="form-note">This sends your message by email to admin@tamarimachiya.com.</p>
+        </form>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-line">
+        <p>© 2026 Tamari Tutoring. All rights reserved.</p>
+        <p class="footer-credit">Powered by <a href="https://www.cyberdevelopers.co.za" target="_blank" rel="noopener noreferrer">Cyber Developers<span class="visually-hidden"> (opens in a new tab)</span></a></p>
+      </div>
+    </footer>
+    <script>
+      if (new URLSearchParams(location.search).has("sent")) {
+        document.getElementById("sent-note").hidden = false;
+        document.getElementById("contact-form").hidden = true;
+      }
+    </script>
+  </body>
+</html>

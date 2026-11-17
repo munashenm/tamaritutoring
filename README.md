@@ -31,4 +31,6 @@ Upload the contents of this folder so that `index.html` is at the site root. Kee
 2. Add the custom domain `tamaritutoring.com` and follow the DNS steps the host shows.
 3. Confirm the certificate is active, then check the enrolment email link on a phone and on a desktop.
 
+The contact form on `contact.html` posts to [FormSubmit](https://formsubmit.co/) and delivers messages to admin@tamarimachiya.com. The first time someone uses it, FormSubmit emails that address with a confirmation link. The form starts delivering after that link is opened.
+
 Fees, lesson times, a phone number and a street address are not on the site. Add them only when they are confirmed.
