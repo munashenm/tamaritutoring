@@ -230,6 +230,10 @@ a {
   text-decoration-thickness: 1px;
 }
 
+.site-nav a[aria-current="page"] {
+  text-decoration-thickness: 3px;
+}
+
 .nav-enrol,
 .nav-login {
   margin-left: 0.35rem;
@@ -430,10 +434,111 @@ a {
 }
 
 .about-copy {
-  margin: 0;
+  margin: 1.25rem 0 0;
   max-width: 42rem;
   font-size: 1.25rem;
   line-height: 1.65;
+}
+
+.about-photo {
+  margin: 0;
+}
+
+.about-photo img,
+.photo-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.about-photo img {
+  aspect-ratio: 3 / 4;
+  object-position: center 20%;
+}
+
+.gallery {
+  padding: 3rem 0;
+  scroll-margin-top: var(--header-offset);
+  border-top: 1px solid var(--line);
+}
+
+.photo-grid {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.photo-grid img {
+  aspect-ratio: 4 / 3;
+}
+
+.contact-page {
+  padding: 2.5rem 0 3.5rem;
+}
+
+.contact-lead {
+  max-width: 40rem;
+  font-size: 1.2rem;
+}
+
+.form-note,
+.form-success {
+  max-width: 40rem;
+}
+
+.form-success {
+  background: var(--cream-deep);
+  border-left: 4px solid var(--gold);
+  padding: 1rem 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.contact-form {
+  display: grid;
+  gap: 1rem;
+  max-width: 36rem;
+  margin-top: 1.5rem;
+}
+
+.contact-form label {
+  display: grid;
+  gap: 0.35rem;
+  font-weight: 700;
+  color: var(--green);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  min-height: 48px;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid var(--green);
+  border-radius: 4px;
+  background: var(--paper);
+  color: var(--ink);
+  font: inherit;
+}
+
+.contact-form textarea {
+  min-height: 9rem;
+  resize: vertical;
+}
+
+.contact-form .button {
+  justify-self: start;
+  border: 0;
+  cursor: pointer;
+}
+
+.hp {
+  display: none;
 }
 
 .section-intro {
@@ -597,19 +702,16 @@ main:focus {
   }
 
   .site-nav ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     width: 100%;
-    gap: 0.45rem 0.6rem;
+    gap: 0.45rem 0.75rem;
   }
 
-  .site-nav li:nth-child(1) {
-    justify-self: start;
-  }
-
-  .site-nav li:nth-child(2) {
-    justify-self: end;
+  .site-nav li:has(.nav-enrol),
+  .site-nav li:has(.nav-login) {
+    flex: 1 1 9rem;
   }
 
   .nav-enrol,
@@ -638,6 +740,7 @@ main:focus {
 
   .about,
   .subjects,
+  .gallery,
   .enrol {
     padding: 4.25rem 0;
   }
@@ -645,9 +748,23 @@ main:focus {
 
 @media (min-width: 800px) {
   .about-grid {
-    grid-template-columns: minmax(14rem, 0.85fr) 1.3fr;
+    grid-template-columns: minmax(16rem, 0.8fr) 1.2fr;
     gap: 2.5rem;
     align-items: start;
+  }
+}
+
+@media (min-width: 720px) {
+  .photo-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .photo-wide {
+    grid-column: 1 / -1;
+  }
+
+  .contact-page {
+    padding: 4rem 0 4.5rem;
   }
 }
 
