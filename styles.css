@@ -551,8 +551,20 @@ a {
   font-weight: 700;
 }
 
-.site-footer p:last-child {
-  margin-bottom: 0;
+.footer-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem 1.5rem;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.site-footer .footer-credit {
+  margin-left: auto;
 }
 
 main:focus {
