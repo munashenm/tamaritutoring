@@ -33,4 +33,4 @@ Upload the contents of this folder so that `index.html` is at the site root. Kee
 
 The contact form, the Become a Tutor form and the newsletter box post to [FormSubmit](https://formsubmit.co/) and deliver messages to admin@tamaritutoring.com, the same address as the enrolment button. The first time someone uses a form, FormSubmit emails that address with a confirmation link. The form starts delivering after that link is opened.
 
-Fees, lesson times, a phone number and a street address are not on the site. Add them only when they are confirmed.
+The contact page lists the phone number +263 782 712 631. Fees, lesson times and a street address are not on the site. Add them only when they are confirmed.
