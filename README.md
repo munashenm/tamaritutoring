@@ -20,7 +20,7 @@ Upload the contents of this folder so that `index.html` is at the site root. Kee
 
 ### Existing web hosting
 
-1. Upload `index.html`, `about.html`, `contact.html`, `styles.css`, `logo.png`, `favicon.png`, the `fonts` folder and the `photos` folder to the document root (often `public_html`).
+1. Upload `index.html`, `about.html`, `contact.html`, `privacy.html`, `faqs.html`, `become-a-tutor.html`, `terms.html`, `newsletter.js`, `styles.css`, `logo.png`, `favicon.png`, the `fonts` folder and the `photos` folder to the document root (often `public_html`).
 2. Point the DNS for `tamaritutoring.com` at that host, using the A record or CNAME the host gives you. Add `www` as well if you want both names.
 3. Turn on HTTPS in the host’s control panel. The page’s canonical address is `https://tamaritutoring.com/`.
 4. Open the live site, use About, Subjects, Contact and Enrolment, confirm **Email Us to Enrol** opens a message to admin@tamaritutoring.com, and confirm **Parents Login** opens https://app.schoolhubsa.co.za/tamaritutoring. The About page holds the service details and the photographs.
@@ -31,6 +31,6 @@ Upload the contents of this folder so that `index.html` is at the site root. Kee
 2. Add the custom domain `tamaritutoring.com` and follow the DNS steps the host shows.
 3. Confirm the certificate is active, then check the enrolment email link on a phone and on a desktop.
 
-The contact form on `contact.html` posts to [FormSubmit](https://formsubmit.co/) and delivers messages to admin@tamaritutoring.com, the same address as the enrolment button. The first time someone uses it, FormSubmit emails that address with a confirmation link. The form starts delivering after that link is opened.
+The contact form, the Become a Tutor form and the newsletter box post to [FormSubmit](https://formsubmit.co/) and deliver messages to admin@tamaritutoring.com, the same address as the enrolment button. The first time someone uses a form, FormSubmit emails that address with a confirmation link. The form starts delivering after that link is opened.
 
 Fees, lesson times, a phone number and a street address are not on the site. Add them only when they are confirmed.

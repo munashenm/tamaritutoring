@@ -72,11 +72,53 @@
     </main>
 
     <footer class="site-footer">
-      <div class="wrap footer-line">
-        <p>© 2026 Tamari Tutoring. All rights reserved.</p>
-        <p class="footer-credit">Powered by <a href="https://www.cyberdevelopers.co.za" target="_blank" rel="noopener noreferrer">Cyber Developers<span class="visually-hidden"> (opens in a new tab)</span></a></p>
+      <div class="footer-main">
+        <div class="wrap footer-grid">
+          <div class="footer-brand">
+            <a class="footer-logo-link" href="index.html">
+              <img src="logo.png" alt="Tamari Tutorial Service" width="1086" height="362">
+            </a>
+            <p class="kicker">Our mission</p>
+            <p class="mission">To help learners strengthen their understanding and gain confidence in the classroom.</p>
+          </div>
+          <div class="footer-news">
+            <form class="newsletter" id="newsletter-form" action="https://formsubmit.co/admin@tamaritutoring.com" method="POST">
+              <p class="kicker">Newsletter</p>
+              <p class="newsletter-lead">Leave your email address to hear from Tamari Tutorial Service.</p>
+              <input type="hidden" name="_subject" value="Newsletter signup from the Tamari Tutorial Service website">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_next" value="https://tamaritutoring.com/index.html?subscribed=1">
+              <p class="hp" aria-hidden="true">
+                <label>Leave this field empty<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label>
+              </p>
+              <label for="newsletter-email">Email address</label>
+              <div class="newsletter-row">
+                <input id="newsletter-email" type="email" name="email" autocomplete="email" required>
+                <button class="button" type="submit">Subscribe</button>
+              </div>
+              <p class="newsletter-note">This sends your email address to admin@tamaritutoring.com.</p>
+            </form>
+            <p class="form-success" id="newsletter-success" hidden>Thank you. Your email address has been sent to Tamari Tutorial Service.</p>
+          </div>
+          <nav class="footer-nav" aria-label="Footer">
+            <ul>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="faqs.html">FAQs</a></li>
+              <li><a href="become-a-tutor.html">Become a Tutor</a></li>
+              <li><a href="terms.html">Terms and Conditions</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-bar">
+        <div class="wrap footer-line">
+          <p>© 2026 Tamari Tutoring. All rights reserved.</p>
+          <p class="footer-credit">Powered by <a href="https://www.cyberdevelopers.co.za" target="_blank" rel="noopener noreferrer">Cyber Developers<span class="visually-hidden"> (opens in a new tab)</span></a></p>
+        </div>
       </div>
     </footer>
+    <script src="newsletter.js"></script>
     <script>
       if (new URLSearchParams(location.search).has("sent")) {
         document.getElementById("sent-note").hidden = false;
