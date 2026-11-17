@@ -20,10 +20,10 @@ Upload the contents of this folder so that `index.html` is at the site root. Kee
 
 ### Existing web hosting
 
-1. Upload `index.html`, `styles.css`, `favicon.svg` and the `fonts` folder to the document root (often `public_html`).
+1. Upload `index.html`, `styles.css`, `logo.png`, `favicon.png` and the `fonts` folder to the document root (often `public_html`).
 2. Point the DNS for `tamaritutoring.com` at that host, using the A record or CNAME the host gives you. Add `www` as well if you want both names.
 3. Turn on HTTPS in the host’s control panel. The page’s canonical address is `https://tamaritutoring.com/`.
-4. Open the live site, use About, Subjects and Enrolment, and confirm **Email Us to Enrol** opens a message to admin@tamaritutoring.com.
+4. Open the live site, use About, Subjects and Enrolment, confirm **Email Us to Enrol** opens a message to admin@tamaritutoring.com, and confirm **Parents Login** opens https://app.schoolhubsa.co.za/tamaritutoring.
 
 ### Cloudflare Pages or Netlify
 
