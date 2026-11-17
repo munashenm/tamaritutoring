@@ -744,12 +744,6 @@ a {
   font: inherit;
 }
 
-.newsletter-note {
-  max-width: 28rem;
-  margin: 0.7rem 0 0;
-  color: var(--ink-soft);
-}
-
 .footer-nav ul {
   display: grid;
   gap: 0.15rem;
